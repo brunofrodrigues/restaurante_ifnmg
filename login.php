@@ -5,16 +5,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Página de Login</title>
 </head>
+<body>
+    <header>
+        <?php 
+        include_once 'inc/header.inc.php';
+        ?>
+    </header>
 
-    <fieldset>
-        <form action="" method="get">
-          <label for="email">Email:</label><br>
-          <input name="email" type="text" id="email" value=""><br>
+    <main>
+        <fieldset>
+            <form action="" method="get">
+                <label for="email">Email:</label><br>
+                <input name="email" type="text" id="email" value=""><br>
         
-          <label for="senha">Senha:</label><br>
-          <input name="senha" type="password" id="senha" value=""><br>
+                <label for="senha">Senha:</label><br>
+                <input name="senha" type="password" id="senha" value=""><br>
 
-    </fieldset>
+          
+                <button type="submit" id="">Logar</button>
+            </form>
+        </fieldset>
 
-    <button type="submit" id="">Logar</button>
-        </form>
+    </main>
+
+    <footer>
+        <?php 
+        include_once 'inc/footer.inc.php';
+        ?>
+
+    </footer>
+</body>
+</html>
