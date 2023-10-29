@@ -7,7 +7,7 @@ class Util{
         require_once 'classes/r.class.php';
 
         R::setup(
-            'mysql:host=localhost;dbname=restaurante',
+            'mysql:host=localhost;dbname=restaurante_ifnmg',
             'root',
             ''
         );

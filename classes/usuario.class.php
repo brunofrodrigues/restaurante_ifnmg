@@ -1,6 +1,6 @@
 <?php
 
-require_once(dirname(__FILE__) ."");
+require_once 'perfil.enum.class.php';
 
 class Usuario{
     public $id;

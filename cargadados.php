@@ -1,7 +1,7 @@
 <?php
 
 require_once 'classes/r.class.php';
-require_once 'entidades/perfil.enum.php';
+require_once 'classes/perfil.enum.class.php';
 
 R::setup('mysql:host=localhost;dbname=restaurante_ifnmg', 'root', '' );
 
