@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadstro de Perfis</title>
+</head>
+<body>
+    <h2>Formulário de Inscrição de Usuários ao Restaurante</h2>
+
+    <form action="list.php" method="get">
+            <fieldset>
+
+            <label for="nome">Nome:</label><br>
+            <input name="nome" type="text" id="nome" value="Rafaell"><br>
+        
+            <label for="email">Email:</label><br>
+            <input name="email" type="text" id="email" value="rafa@gmail.com"><br>
+        
+            <label for="senha">Senha:</label><br>
+            <input name="senha" type="password" id="senha" value="1234"><br>
+        
+            <label for="data">Data de Nascimento:</label><br>
+            <input name="data" type="date" id="data" value=""><br>
+        
+            <br>
+            </fieldset>
+
+            <select name="perf" id="perf">
+                <option value="gerente" name="gerente" id="gerente">Gerente</option>
+                <option value="caixa" name="caixa" id="caixa">Caixa</option>
+                <option value="cliente" name="cliente" id="cliente">Cliente</option>
+            </select>
+
+            <button type="submit" id="sub1">Cadastrar</button>
+    </form>
+</body>
+</html>
