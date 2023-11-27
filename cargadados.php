@@ -9,19 +9,19 @@ $usuario = R::dispense('usuario');
 $usuario->nome = 'Rafaell';
 $usuario->email = 'rafa@gmail';
 $usuario->senha = md5('1234' . '__');
-$usuario->perfil = R::enum('perfil:'. Perfil::Gerente);
+$usuario->perfil = R::enum('perfil:Gerente');
 
 $usuario2 = R::dispense('usuario');    
 $usuario2->nome = 'Bruno';
 $usuario2->email = 'bruno@gmail.com';
 $usuario2->senha = md5('1234'. '__');
-$usuario2->perfil = R::enum('perfil:'. Perfil::Cliente);
+$usuario2->perfil = R::enum('perfil:Cliente');
 
 $usuario3 = R::dispense('usuario'); 
 $usuario3->nome = 'Edu';
 $usuario3->email = 'bet@gmail.com';
 $usuario3->senha = md5('1234'. '__');
-$usuario3->perfil = R::enum('perfil:'. Perfil::Caixa);
+$usuario3->perfil = R::enum('perfil:Caixa');
 
 R::store( $usuario );
 R::store( $usuario2 );

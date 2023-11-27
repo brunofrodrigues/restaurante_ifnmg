@@ -4,7 +4,7 @@ class Util{
 
     public static function autenticarUsuario($email, $senha)
     {
-        require_once 'classes/r.class.php';
+        require_once 'r.class.php';
 
         R::setup(
             'mysql:host=localhost;dbname=restaurante_ifnmg',
@@ -23,17 +23,17 @@ class Util{
             session_start();
             $_SESSION['usuario'] = $usuario['nome'];
             $_SESSION['email'] = $usuario['email'];
-            $_SESSION['perfil'] = $usuario['perfil_id'];
+            $_SESSION['perfil'] = $usuario['perfil'];
 
-            if ($usuario['perfil_id'] == 1) 
+            if ($usuario['perfil'] == 1) 
             {
                 header('Location:caixa/index');
             } 
-            else if($usuario['perfil_id'] == 2)
+            else if($usuario['perfil'] == 2)
             {
                 header('Location:cliente/index');
             }
-            else if($usuario['perfil_id'] == 3)
+            else if($usuario['perfil'] == 3)
             {
                 header('Location:gerente/index');
             }

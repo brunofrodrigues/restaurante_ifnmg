@@ -1,7 +1,8 @@
 <?php
 
-class Perfil{
-    const Gerente = "Gerente";
-    const Cliente = "Cliente";
-    const Caixa = "Caixa";
+enum Perfil{
+    case Administrador;
+    case Gerente;
+    case Cliente;
+    case Caixa;
 }

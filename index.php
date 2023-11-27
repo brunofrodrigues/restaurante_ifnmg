@@ -31,7 +31,7 @@
 
     <main>
         <fieldset>
-            <form action="" method="post">
+            <form action="./" method="post">
                 <label for="email">Email:</label><br>
                 <input name="email" type="text" id="email" value=""><br>
         
@@ -43,7 +43,13 @@
             </form>
             <a href="./cargadados.php">Clique aqui</a> para carregar dados pré definidos anteriomente.
         </fieldset>
+        <fieldset>
+            <!-- Campo de Ultimas Notícias -->
+            <h2>Últimas Notícias</h2>
+            <?= $_POST['conteudo'] ?>
 
+            <a href="todasnoticias.php">All noticies</a>
+        </fieldset>
     </main>
 
     <footer>
